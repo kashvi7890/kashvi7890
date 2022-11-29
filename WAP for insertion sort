@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int a[10],n,i,ptr=0,k,temp;
+clrscr();
+printf("enter n");
+scanf("%d",&n);
+
+for(k=2;k<=n;k++)
+{
+temp=a[k];
+ptr=k-1
+
+while(temp < a[ptr])
+{
+a[ptr+1]= a[ptr];
+ptr= ptr-1;
+}
+a[ptr+1] =temp;
+}
+printf{"elements are");
+for(i=1;i<=n;i++)
+printf("%d",a[i]);
+getch();
+}
